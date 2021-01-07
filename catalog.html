@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"> 
-          <img src="img/index-logo.svg" width="160" height="67" alt="Логотип nerd's">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип nerd's">
         </a>
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
@@ -31,10 +31,61 @@
           <!--Здесь будет форма-->
         </div>
         <div class="web-container">
-          <h2 class="web">Сетка:</h2>
-          <!--Здесь будет форма-->
+        <form class="filter" method="get"
+          action="https://echo.htmlacademy.ru">
+          <fieldset> 
+            <legend>Cетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input  class="visually-hidden filter-input filter-input-radio" type="radio" 
+                name="web" value="adaptive" id="filter-adaptive" checked> 
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" 
+                name="web" value="fixed" id="filter-fixed" > 
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" 
+                name="web" value="rubber" id="filter-rubber"> 
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset> 
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                name="slider" id="filter-slider" checked> 
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                name="advantages-block" id="filter-advantages-block"> 
+                <label for="filter-advantages-block">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                name="news" id="filter-news" checked> 
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                name="gallery" id="filter-gallery" > 
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
+                name="basket" id="filter-basket"> 
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button-show" type="submit">Показать</button>
+        </form>
         </div>
-        <button class="button-show">Показать</button>
       </aside>
       <section class="main-content">
         <h2 class="sort">Сортировать:</h2>
@@ -44,17 +95,17 @@
           <li class="sort-variant-item">По названию</li>
         </ul>
         <ul class="products">
-          <li class="products-item"><div class="sedona"><img src="img/sedona.jpg" width="360" height="617" 
+          <li class="products-item"><div class="sedona"><img src="img/img-sedona.jpg" width="360" height="576" 
             alt="Изображение шаблона Sedona"></div></li>
-          <li class="products-item"><div class="pink"><img src="img/pink.jpg" width="360" height="617" 
+          <li class="products-item"><div class="pink"><img src="img/img-pink.jpg" width="360" height="576" 
             alt="Изображение шаблона Pink"></div></li>
-          <li class="products-item"><div class="borodinski"><img src="img/borodinski.jpg" width="360" height="617" 
+          <li class="products-item"><div class="borodinski"><img src="img/img-barbershop.jpg" width="360" height="576" 
             alt="Изображение шаблона Барбершопа «Бородинский»"></div></li>
-          <li class="products-item"><div class="mishka"><img src="img/mishka.jpg" width="360" height="617" 
+          <li class="products-item"><div class="mishka"><img src="img/img-mishka.jpg" width="360" height="576" 
             alt="Изображение шаблона Mishka"></div></li>
-          <li class="products-item"><div class="ua"><img src="img/ua.jpg" width="360" height="617" 
+          <li class="products-item"><div class="aplus"><img src="img/img-aplus.jpg" width="360" height="576" 
             alt="Изображение шаблона UA+"></div></li>
-          <li class="products-item"><div class="kvast"><img src="img/kvast.jpg" width="360" height="617" 
+          <li class="products-item"><div class="kvast"><img src="img/img-kvast.jpg" width="360" height="576" 
             alt="Изображение шаблона Кваст"></div></li>
         </ul>
         <ul class="pagination-list">
@@ -65,19 +116,36 @@
         </ul>
       </section>
       <section class="map">
-        <img src="img/map.jpg" width="1437" height="414" alt="Карта c расположением nerd's">
-      <div class="contacts">
-        <h2 class="contacts-header"><b>NЁRDS DESIGN STUDIO</b></h2>
-        <p>191186, Санкт-Петербург,<br>
-        ул. Б.Конюшенная, д. 19/8 <br>
-        тел. +7 (812) 275-75-75</p>
-        <a class="button-write" href="#">Напишите нам</a>
-        <section class="modal modal-feedback">
-          <h2 class="modal-header">Напишите нам</h2>
-          <!--Здесь будет форма-->
-          <span class="modal-close">x</span>
-        </section>
-      </div>
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта c расположением nerd's">
+        <div class="contacts">
+          <h2 class="contacts-header"><b>NЁRDS DESIGN STUDIO</b></h2>
+          <p>191186, Санкт-Петербург,<br>
+          ул. Б.Конюшенная, д. 19/8 <br>
+           тел. +7 (812) 275-75-75</p>
+          <a class="button-write" href="#">Напишите нам</a>
+          <section class="modal modal-feedback">
+            <h2 class="modal-header">Напишите нам</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+              <p>
+                <label class="visually-hidden" for="user-login">Ваше имя:</label>
+                <input id="user-login" class="login-icon-user" type="text" name="login" 
+                 placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+                <input id="user-email" class="login-icon-email" type="email" name="email" 
+                placeholder="email@example.com">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-text">Текст письма:</label>
+                <input id="user-text" class="login-icon-text" type="textarea" name="text" 
+                placeholder="В свободной форме">
+              </p>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">x</button>
+          </section>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
